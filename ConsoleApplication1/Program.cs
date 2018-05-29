@@ -13,10 +13,38 @@ namespace ConsoleApplication1
         {
             Console.WriteLine();
             //new ProgramXX().ain(null);
-            new std();
-            new std(2);
+            //new std(); //std -> constructor1
+            //new std(2); //std -> constructor2
 
-            Console.WriteLine("end of program");
+            Console.Write("Enter a value: ");
+            
+
+            try
+            {
+                int inp = Int16.Parse(Console.ReadLine());
+                Console.WriteLine(inp);
+                switch (inp)
+                {
+                    case 1:
+                        new files(); 
+                        break;                        
+                    case 2:
+                        new files(0); 
+                        break;
+                    case 3:
+                        new files(0, 0);
+                        break;
+                    default:
+                        Console.WriteLine("invalid argument");
+                        break; //must to have break.
+                }
+            }
+            catch(Exception e)
+            {
+                Console.WriteLine("exception occured\n-----------------------");
+                Console.WriteLine(e);
+            }
+
             Console.ReadLine();
         }
     }
