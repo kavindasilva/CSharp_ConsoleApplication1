@@ -34,6 +34,15 @@ namespace ConsoleApplication1
                     case 3:
                         new files(0, 0);
                         break;
+                    case 4:
+                        new exter1();
+                        break;
+                    case 5:
+                        new db2();
+                        break;
+                    case 6:
+                        new db2(0);
+                        break;
                     default:
                         Console.WriteLine("invalid argument");
                         break; //must to have break.
@@ -49,6 +58,8 @@ namespace ConsoleApplication1
         }
     }
 
+
+    //this class represents a simple word guessing game
     class ProgramXX
     {
         //public int x = 0;
